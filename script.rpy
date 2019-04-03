@@ -66,11 +66,11 @@ label computerlab:
 
     play sound "typing.mp3"
 
-    j "Done! I can't wait to show my mom tonight."
+    j "Done! I can't wait to show my family tonight."
 
     show jane angry
 
-    j "I just wish we could keep working."
+    j "I just wish we had more time to work."
 
     show jane happy
 

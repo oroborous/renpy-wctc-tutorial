@@ -323,6 +323,8 @@ screen navigation():
 
         textbutton _("About") action ShowMenu("about")
 
+        textbutton _("Credits") action ShowMenu("credits")
+
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
@@ -1513,3 +1515,15 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
+
+screen credits():
+    tag menu
+    frame:
+        #background "images/whatever.png"
+        vbox: #This puts the elements in a vertical box, you could use an hbox or a grid or a fixed, etc.
+            text "Programming: Stacy Read"
+            text "Music: Brittney Schultz"
+            text "Art (3 Little Pigs): Gigi Read"
+            text "Art (Goldilocks): Chloe McChesney"
+            text "Art (3 Billy Goats Gruff): Callie Swensen"
+            textbutton _("Return") action Return()
